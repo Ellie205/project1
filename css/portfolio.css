@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    background-color: #FCFCFC;
+    color: #252528;
+    font-family: "Noto Sans", sans-serif;
+}
+h1, h2, h3, #contactButton, nav ul{
+    font-family: "Outfit", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/*Navigatiemenu*/
+nav{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px;
+    position: relative;
+}
+#navFoto{
+    position: absolute;
+    left: 50px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 100%;
+}
+#fotoEline{
+    clip-path: circle(40% at 50% 45%);
+    width: 70px;
+    margin-top: 6px;
+}
+.navTekst{
+    display: initial;
+    line-height: 1.2;
+}
+#navNaam{
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+#navSubTitel{
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 45px;
+    padding: 0;
+    margin: 0 auto; 
+}
+nav a{
+    color: #252528;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+nav a.active{
+    color: #94CCCB;
+}
+nav a:hover{
+    color: #B974B0;
+}
+#contactButton{
+    background-color: #B974B0;
+    color: white;
+    text-decoration: none;
+    padding: 6px 22px;
+    border-radius: 25px;
+    transition: all 0.5s ease;
+    position: absolute;
+    right: 100px;
+}
+#contactButton:hover{
+    background-color: #94CCCB;
+    color: #252528;
+}
+/*Footer*/
+footer{
+    background-color: #B974B0;
+    height: 280px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 100px;
+    position: relative;
+}
+footer div{
+    margin: 50px 0;
+}
+#footerAchtergrond{
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+#navigatie{
+    display: flex;
+    flex-direction: column;
+}
+#copyright{
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*Home*/
+#banner{
+    background-color: #BADEDD;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+#bannerFoto{
+    margin-top: 20px;
+    clip-path: circle(40% at 50% 45%);
+    width: 220px;
+}
+#banner div{
+    width: 350px;
+}
+#banner h1{
+    font-size: 26px;
+    line-height: 0;
+}
+#banner p{
+    font-size: 16px;
+}
+#meerInfo{
+    position: absolute;
+    bottom: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#meerInfo p{
+    margin-bottom: 4px;
+    font-size: 12px;
+}
+#meerInfo img{
+    width: 14px;
+}
