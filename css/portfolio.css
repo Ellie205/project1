@@ -7,7 +7,7 @@ body{
     color: #252528;
     font-family: "Noto Sans", sans-serif;
 }
-h1, h2, h3, #contactButton, nav ul{
+h1, h2, h3, #contact-button, nav ul{
     font-family: "Outfit", sans-serif;
     font-weight: 600;
     font-size: 20px;
@@ -21,7 +21,7 @@ nav{
     padding: 0px 50px;
     position: relative;
 }
-#navFoto{
+#nav-foto{
     position: absolute;
     left: 50px;
     display: flex;
@@ -29,22 +29,22 @@ nav{
     gap: 4px;
     height: 100%;
 }
-#fotoEline{
+#foto-Eline{
     clip-path: circle(40% at 50% 45%);
     width: 70px;
     margin-top: 6px;
 }
-.navTekst{
+.nav-tekst{
     display: initial;
     line-height: 1.2;
 }
-#navNaam{
+#nav-naam{
     font-weight: 500;
     font-size: 16px;
     margin: 0;
     padding: 0;
 }
-#navSubTitel{
+#nav-subtitel{
     font-size: 12px;
     margin: 0;
     padding: 0;
@@ -69,7 +69,7 @@ nav a.active{
 nav a:hover{
     color: #B974B0;
 }
-#contactButton{
+#contact-button{
     background-color: #B974B0;
     color: #FCFCFC;
     text-decoration: none;
@@ -79,7 +79,7 @@ nav a:hover{
     position: absolute;
     right: 100px;
 }
-#contactButton:hover{
+#contact-button:hover{
     background-color: #94CCCB;
     color: #252528;
 }
@@ -95,14 +95,14 @@ footer{
     color: #FCFCFC;
     font-size: 14px;
 }
-#footerAchtergrond{
+#footer-achtergrond{
     height: 80%;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
 }
-#footerLists{
+#footer-lists{
     margin-top: 35px;
     width: 100%;
     display: grid;
@@ -110,28 +110,28 @@ footer{
     align-items: flex-start;
     gap: 150px;
 }
-#footerLists ul{
+#footer-lists ul{
     list-style: none;
     margin: 0;
     padding: 0;
 }
-#footerLists ul:first-child{
+#footer-lists ul:first-child{
     justify-self: end;
 }
-#footerLists h4{
+#footer-lists h4{
     font-size: 16px;
     margin-bottom: 8px;
 }
-#footerLists a{
+#footer-lists a{
     color: #FCFCFC;
     text-decoration: none;
     line-height: 2.2;
     transition: all 0.5s ease;
 }
-#footerLists a:hover{
+#footer-lists a:hover{
     color: #94CCCB;
 }
-#footerIcon{
+#footer-icon{
     font-size: 18px;
 }
 #copyright{
@@ -151,7 +151,7 @@ footer{
     align-items: center;
     position: relative;
 }
-#bannerFoto{
+#banner-foto{
     margin-top: 20px;
     clip-path: circle(40% at 50% 45%);
     width: 220px;
@@ -166,7 +166,7 @@ footer{
 #banner p{
     font-size: 16px;
 }
-#meerInfo{
+#meer-info{
     position: absolute;
     bottom: 10px;
     left: 50%;
@@ -176,7 +176,7 @@ footer{
     align-items: center;
     justify-content: center;
 }
-#meerInfo p{
+#meer-info p{
     margin: 0;
     font-size: 12px;
 }
@@ -185,13 +185,13 @@ footer{
     margin: 80px auto;
     width: 50%;
 }
-#welkomQuote{
+#welkom-quote{
     font-family: "Crete Round";
     font-weight: 500;
     font-size: 32px;
     margin-bottom: 5px;
 }
-#welkomTekst{
+#welkom-tekst{
     margin: 0 auto;
     width: 90%;
 }
@@ -241,9 +241,7 @@ footer{
 /*CV*/
 main{
     display: grid;
-	/* grid-template-rows: repeat(3, 1fr); */
-    grid-template-rows: auto auto auto;
-	grid-template-columns: repeat(2, 50%);
+	grid-template-columns: 55% 45%;
 	gap: 0px;
     margin: 30px 0 80px 0;
     width: 100%;
@@ -256,13 +254,14 @@ main p{
     font-size: 14px;
 }
 /*Hard Skills*/
-#hardSkills{
-    grid-area: 1 / 1 / 4 / 2;
+#hard-skills{
+    grid-row-start: 1;
+    grid-row-end: 4;
     margin: 0 auto;
     margin-right: 120px;
     width: 60%;
 }
-#hardSkills p{
+#hard-skills p{
     margin: 40px 0 6px 30px;
 }
 .balk{
@@ -277,7 +276,7 @@ main p{
     background-color: #94CCCB;
     border-radius: 12px;
 }
-#cSharp{
+#c-sharp, #javascript{
     width: 65%;
 }
 #html{
@@ -286,45 +285,37 @@ main p{
 #css{
     width: 75%;
 }
-#javaScript{
-    width: 65%;
-}
-#php{
-    width: 55%;
-}
-#mySQL{
+#php, #mySQL{
     width: 55%;
 }
 #msOffice{
     width: 85%;
 }
-#adobeI{
+#adobe-I{
     width: 50%;
 }
-#adobeA{
+#adobe-A{
     width: 40%;
 }
 /*Soft Skills*/
-#softSkills{
-    grid-area: 1/2/2/3;
+#soft-skills{
     margin: 0 auto 40px auto;
 }
-#softSkills ul{
+#soft-skills ul{
     list-style: none;
     line-height: 2.5;
 }
-#softSkills li{
+#soft-skills li{
     display: flex;
     align-items: center;
 }
-.skillIcon{
+.skill-icon{
     color: #B974B0;
     margin-right: 20px;
     font-size: 22px;
 }
 /*Quote*/
-#quoteBlok{
-    grid-area: 2/2/3/3;
+#quote-blok{
     margin: 0 0 50px auto;
     background-color: #B974B0;
     color: #FCFCFC;
@@ -336,19 +327,19 @@ main p{
     margin-right: 0;
     position: relative;
 }
-#cvQuote{
+#cv-quote{
     font-family: "Crete Round";
     font-size: 22px;
     width: 65%;
 }
-#cvQuoteTekst{
+#cv-quote-tekst{
     position: absolute;
     right: 35%;
     bottom: 15px;
 }
 /*Talenkennis*/
 #talen{
-    grid-area: 3/2/4/3;
+    grid-column-start: 2;
     margin: 0 auto;
 }
 #talen h3{
@@ -359,4 +350,134 @@ main p{
 #talen p{
     margin: 0;
     margin-bottom: 26px;
+}
+
+/*Ervaring*/
+/*Opleiding*/
+#opleiding{
+    height: 450px;
+    width: 100%;
+    background-color: #BADEDD;
+    padding: 30px 0 60px 0;
+}
+.ervaring-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    gap: 80px;
+}
+.ervaring-titel{
+    text-align: center;
+    font-size: 26px;
+    margin: 0;
+    padding: 25px 0;
+}
+.tijdlijn{
+    position: relative;
+    width: 35%;
+    height: 93%;
+}
+.tijdlijn::after{
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #252528;
+    border-radius: 15px;
+    top: 20px;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tijdlijn-links, .tijdlijn-rechts{
+    position: relative;
+    width: 45%;
+    height: auto;
+    padding: 20px 10px;
+}
+.tijdlijn-links h3, .tijdlijn-rechts h3{
+    margin: 0;
+}
+.tijdlijn-links p, .tijdlijn-rechts p{
+    margin: 0;
+    font-size: 14px;
+}
+.tijdlijn-links{
+    left: 0;
+    text-align: right;
+    margin-right: 10px;
+}
+.tijdlijn-rechts{
+    left: 50%;
+    text-align: left;
+    margin-left: 10px;
+}
+.tijdlijn-bolletje{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    background-color: #B974B0;
+    border: 3px solid #BADEDD;
+    border-radius: 50%;
+    left: calc(50%);
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+    z-index: 5;
+}
+.tijdlijn-bolletje.netwerken{
+    top: 13%;
+}
+.tijdlijn-bolletje.webontwikkelaar{
+    top: 43%;
+}
+.tijdlijn-bolletje.programmeren{
+    top: 75%;
+}
+#diplomas, #werk-uitleg{
+    width: 35%;
+    height: 100%;
+}
+#diplomas ul{
+    list-style: none;
+}
+#diplomas li{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.diploma-icon{
+    font-size: 30px;
+}
+/*Werkervaring*/
+#werkervaring{
+    height: 480px;
+    width: 100%;
+    margin: 30px 0 60px 0;
+}
+#werk-uitleg h4{
+    font-size: 18px;
+    margin: 0;
+    margin-top: 35px;
+}
+#werk-uitleg p{
+    margin: 0;
+    margin-bottom: 40px;
+}
+.tijdlijn.werk::after{
+    background-color: #D0D0D0;
+}
+.tijdlijn-bolletje.werk{
+    border: 3px solid #FCFCFC;
+    background-color: #BADEDD;
+}
+.tijdlijn-bolletje.jobstudent{
+    top: 15%;
+}
+.tijdlijn-bolletje.digidokter{
+    top: 48%;
+}
+.tijdlijn-bolletje.coderdojo{
+    top: 77%;
 }
