@@ -26,6 +26,43 @@
         </ul>
         <a id="contact-button" href="contact.html">Contact</a>
     </nav>
+    <main class="contact">
+        <section class="contact-item">
+            <h2>Contactgegevens</h2>
+            <ul>
+                <li><i class="contact-icon bi bi-person-fill"></i>Eline De Backer</li>
+                <li><i class="contact-icon bi bi-envelope-fill"></i><a href="mailto:eline.dbacker@outlook.be">eline.dbacker@outlook.be</a></li>
+            </ul>
+            <h2>Socials</h2>
+            <a href="https://www.linkedin.com/in/eline-de-backer-01486a340/" target="_blank"><i class="linkedin-icon bi bi-linkedin"></i></a>
+        </section>
+        <section class="contact-formulier">
+            <h2>Contactformulier</h2>
+            <form action="" method="post">
+                <div class="naam-container">
+                    <div class="naam-item">
+                        <label for="voornaam">Voornaam:</label><br>
+                        <input type="text" id="voornaam" name="voornaam" placeholder="Voornaam">
+                    </div>
+                    <div class="naam-item">
+                        <label for="achternaam">Achternaam:</label><br>
+                        <input type="text" id="achternaam" name="achternaam" placeholder="Achternaam">
+                    </div>
+                </div>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+
+                <label for="onderwerp">Onderwerp:</label>
+                <input type="text" id="onderwerp" name="onderwerp" placeholder="Onderwerp">
+
+                <label for="bericht">Jouw bericht:</label>
+                <textarea name="bericht" id="bericht" placeholder="Bericht" rows="8"></textarea>
+
+                <input type="submit" id="verzenden" value="Verzenden">
+            </form>
+        </section>
+    </main>
     <footer>
         <img id="footer-achtergrond" src="img/website_background.png" alt="Technische illustratie" title="Technische illustratie">
         <div id="footer-lists">
