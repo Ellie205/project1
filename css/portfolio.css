@@ -576,6 +576,10 @@ footer{
 .contact a{
     text-decoration: none;
     color: #252528;
+    transition: all 0.5s ease;
+}
+.contact a:hover{
+    color: #94CCCB;
 }
 /*Gegevens*/
 .contact-item{
