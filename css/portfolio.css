@@ -44,13 +44,9 @@ nav{
 #nav-naam{
     font-weight: 500;
     font-size: 16px;
-    margin: 0;
-    padding: 0;
 }
 #nav-subtitel{
     font-size: 12px;
-    margin: 0;
-    padding: 0;
 }
 nav ul{
     list-style-type: none;
@@ -58,7 +54,6 @@ nav ul{
     align-items: center;
     justify-content: center;
     gap: 45px;
-    padding: 0;
     margin: 0 auto; 
 }
 nav a{
@@ -116,8 +111,6 @@ footer{
 }
 #footer-lists ul{
     list-style: none;
-    margin: 0;
-    padding: 0;
 }
 #footer-lists ul:first-child{
     justify-self: end;
@@ -181,7 +174,6 @@ footer{
     justify-content: center;
 }
 #meer-info p{
-    margin: 0;
     font-size: 12px;
 }
 /*Welkom Tekst*/
@@ -246,7 +238,7 @@ footer{
     display: grid;
 	grid-template-columns: 55% 45%;
 	gap: 0px;
-    margin: 30px 0 0 0;
+    margin-top: 30px;
     width: 100%;
 }
 .cv-container h2{
@@ -345,14 +337,15 @@ footer{
     grid-column-start: 2;
     margin: 30px auto;
 }
+#talen h2{
+    margin-bottom: 10px;
+}
 #talen h3{
     font-size: 18px;
-    margin: 0;
     margin-bottom: 3px;
 }
 #talen p{
-    margin: 0;
-    margin-bottom: 26px;
+    margin-bottom: 20px;
 }
 
 /*Ervaring*/
@@ -398,11 +391,7 @@ footer{
     height: auto;
     padding: 20px 10px;
 }
-.tijdlijn-links h3, .tijdlijn-rechts h3{
-    margin: 0;
-}
 .tijdlijn-links p, .tijdlijn-rechts p{
-    margin: 0;
     font-size: 14px;
 }
 .tijdlijn-links{
@@ -413,7 +402,7 @@ footer{
 .tijdlijn-rechts{
     left: 50%;
     text-align: left;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 .tijdlijn-bolletje{
     position: absolute;
@@ -423,8 +412,7 @@ footer{
     border: 3px solid #BADEDD;
     border-radius: 50%;
     left: calc(50%);
-    transform: translateY(-50%);
-    transform: translateX(-50%);
+    transform: translate(-50%, -50%);
     z-index: 5;
 }
 .tijdlijn-bolletje.netwerken{
@@ -459,16 +447,14 @@ footer{
 }
 #werk-uitleg h4{
     font-size: 18px;
-    margin: 0;
     margin-top: 35px;
 }
 #werk-uitleg p{
-    margin: 0;
     margin-bottom: 40px;
 }
 .tijdlijn.werk::after{
     background-color: #D0D0D0;
-        bottom: 20px;
+    bottom: 20px;
 }
 .tijdlijn-bolletje.werk{
     border: 3px solid #FCFCFC;
