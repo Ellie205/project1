@@ -67,6 +67,9 @@ nav a.active{
 nav a:hover{
     color: #B974B0;
 }
+.nav-tekst:hover{
+    color: #252528;
+}
 #contact-button{
     background-color: #B974B0;
     color: #FCFCFC;
@@ -197,7 +200,18 @@ footer{
     align-items: center;
     justify-content: center;
     gap: 90px;
-    height: 200px;
+    height: auto;
+}
+#secties div{
+    width: 350px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+#secties p{
+    width: 90%;
 }
 #secties a{
     background-color: #BADEDD;
@@ -207,6 +221,7 @@ footer{
     height: 120px;
     border-radius: 25px;
     padding: 10px 35px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -243,7 +258,7 @@ footer{
 }
 .cv-container h2{
     text-align: center;
-    font-size: 24px;
+    font-size: 23px;
 }
 .cv-container p{
     font-size: 14px;
@@ -365,7 +380,7 @@ footer{
 }
 .ervaring-titel{
     text-align: center;
-    font-size: 26px;
+    font-size: 24px;
     margin-bottom: 20px;
     padding-top: 40px;
 }
@@ -412,7 +427,8 @@ footer{
     border: 3px solid #BADEDD;
     border-radius: 50%;
     left: calc(50%);
-    transform: translate(-50%, -50%);
+    transform: translateY(-50%);
+    transform: translateX(-50%);
     z-index: 5;
 }
 .tijdlijn-bolletje.netwerken{
@@ -436,6 +452,7 @@ footer{
     display: flex;
     align-items: center;
     gap: 20px;
+    font-size: 15px;
 }
 .diploma-icon{
     font-size: 30px;
